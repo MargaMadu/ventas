@@ -1,0 +1,10 @@
+# No subir archivos Excel
+*.xlsx
+
+# No subir archivos temporales de Python
+__pycache__/
+*.pyc
+
+# No subir entornos virtuales
+venv/
+.env/
