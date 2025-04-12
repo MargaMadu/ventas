@@ -128,6 +128,6 @@ except Exception as e:
     st.download_button(
     label="Descargar archivo",
     data=data,
-    file_name="archivo.csv",
+    file_name="datos.xlsx",
     disabled=True  # Esto desactiva el botón
 )
