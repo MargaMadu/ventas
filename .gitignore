@@ -1,5 +1,5 @@
 # No subir archivos Excel
-*.xlsx
+
 
 # No subir archivos temporales de Python
 __pycache__/

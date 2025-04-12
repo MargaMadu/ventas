@@ -8,11 +8,10 @@ import plotly.graph_objects as go
 st.set_page_config(layout="wide")
 
 st.title("📦 Análisis de Ventas por Volumen (Unidades) desde archivo Excel")
+
 try:
-    sheet_id = "1HzfrskvlDvAPAziXqJIERSQp0m-jMKZq"
-    sheet_name = "Hoja 1"
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}"
-    df = pd.read_csv(url)
+    # 📥 Leer archivo Excel
+    df = pd.read_excel("datos.xlsx")
 
     # 🧹 Formatear datos
     df["Código"] = df["Código"].astype(str)
