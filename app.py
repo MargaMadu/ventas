@@ -105,3 +105,4 @@ except FileNotFoundError:
     st.error("❌ No se encontró el archivo 'datos.xlsx'")
 except Exception as e:
     st.error(f"❌ Error al procesar el archivo: {e}")
+    st.download_button("Download as CSV", df.to_csv(), mime="text/csv")
