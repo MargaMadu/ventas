@@ -12,6 +12,15 @@ st.title("📦 Análisis de Ventas por Volumen (Unidades) desde archivo Excel")
 try:
     # 📥 Leer archivo Excel
     df = pd.read_excel("datos.xlsx")
+    
+    # Ocultar el botón de descarga
+    st.markdown("""
+    <style>
+    [data-testId="stElementToolbar"] {
+        display: none;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
     # 🧹 Formatear datos
     df["Código"] = df["Código"].astype(str)
